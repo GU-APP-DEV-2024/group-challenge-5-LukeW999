@@ -18,11 +18,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField(
-            "String",
-            "NASA_API_KEY",
-            "${project.findProperty("nasa_api_key")}"
-        )
+        buildConfigField("String", "NASA_API_KEY", "\"${project.findProperty("nasa_api_key")}\"")
+
 
         buildFeatures {
             buildConfig = true
